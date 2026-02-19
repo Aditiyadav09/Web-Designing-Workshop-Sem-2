@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Game Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .settings-container {
+            background: white;
+            padding: 30px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        select, input[type="radio"] {
+            margin-top: 8px;
+        }
+
+        .radio-group {
+            margin-top: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 25px;
+            background: #5c7083;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #1a252f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="settings-container">
+    <h2>Chess Settings</h2>
+
+    <label>Game Mode:</label>
+    <div class="radio-group">
+        <input type="radio" name="mode" checked> Player vs Player<br>
+        <input type="radio" name="mode"> Player vs Computer
+    </div>
+
+    <label>Difficulty:</label>
+    <select>
+        <option>Easy</option>
+        <option>Medium</option>
+        <option>Hard</option>
+    </select>
+
+    <label>Board Theme:</label>
+    <select>
+        <option>Classic</option>
+        <option>Dark</option>
+        <option>Light</option>
+    </select>
+
+    <button>Start Game</button>
+</div>
+
+</body>
+</html>
