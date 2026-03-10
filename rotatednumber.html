@@ -1,0 +1,29 @@
+<!DOCTYPE html><html>
+<head>
+<title>Rotated Number Pyramid</title>
+</head>
+<body><script>
+
+let n = 4;
+
+for(let i=1;i<=n;i++){
+
+    let row="";
+
+   
+    for(let s=1;s<=n-i;s++){
+        row += "  ";
+    }
+
+    
+    let num = i;
+    for(let j=1;j<=i;j++){
+        row += num + " ";
+        num++;
+    }
+
+    console.log(row);
+}
+
+</script></body>
+</html>
